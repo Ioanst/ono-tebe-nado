@@ -1,175 +1,160 @@
 /*  Шапка */
-.header{
+.header {
   display: grid;
   max-width: 1340px;
   align-items: center;
   grid-template-columns: 5fr 1fr 5fr;
-  margin: 92px 49px 92px 51px;
+  margin: 92px 50px 92px 50px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   color: #000;
-  }
-
-  .header_menu{
-    list-style-type: none;
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-  }
-
-  .header_links_list {
-    display:flex;
-    column-gap: 32px ;
-    list-style:circle;
-  }
-
-  .header_links_list_item_no_bullit{
-    list-style-type: none;
-    font-family:Raleway;
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
-  }
-  .header_links_list_item{
-    list-style:circle;
-    font-family:Raleway;
-    font-size: 18px;
-    font-weight: 400;
-  }
-
-  .header_logo{
-    background-color: rgb(255, 255, 255);
-    display: block;
-    justify-self: center;
-    
-  }
-
-  .header_logo_image {
-    display: block;
-    width: 140px;
-    height: 105px;
-  }
-
-  .address {
-    max-width: 240px;
-    font-style: normal;
-    line-height: 135%;
-    justify-self: right;
 }
-.address_tel 
-.adress_mail {
-  width: 240px;
-  height: 24px;
+
+.header_menu {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
 }
-  /*Конец 'ШАПКИ'
+
+.header_links_list {
+  display: flex;
+  column-gap: 32px;
+  list-style: circle;
+}
+
+.header_links_list_item {
+  list-style: circle;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header_link_active {
+  text-decoration: none;
+}
+
+.header_links_list_item_no_bullit {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.header_logo {
+  display: block;
+  justify-self: center;
+}
+
+.header_logo_image {
+  display: block;
+  width: 140px;
+  height: 105px;
+}
+
+.address {
+  max-width: 240px;
+  font-style: normal;
+  line-height: 135%;
+  justify-self: right;
+}
+
+/*Конец 'ШАПКИ'
 
 
    Блок 'ВХОДНАЯ СЕКЦИЯ' */
-  .cover{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    padding: 165px 50px 62px;
-    max-width: 1440px;
-    height: 757px;
-    z-index: 0;
-    position: relative;
-    background-image: url("../images/cover.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .overlay{         /* полупрозрачный слой */
-    width: 100%;
-    height: 100%;
-    background: black;
-    opacity: 60%;
-    position: absolute;
-    background-position: center;
-    z-index:1;
-    inset: 0;
+.cover {
+  max-width: 1440px;
+  background-color: gray;
+  background-image: url(../images/cover.jpg);
+  background-position: 50% 43%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 165px 50px 50px 50px;
+  margin-bottom: 180px;
+}
 
-  }
-  .cover_title{
-    width: 100%;
-    font-size: 100px;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: 0.3em;
-    color: white;
-    text-transform: uppercase;
-    z-index: 2;
-  }
-  .text_up{
-    display:block;
-    text-align: left;
-    letter-spacing: 0.2em;
-    
-  }
-  .text_center{
-    display:block;
-    text-align: center;
-    word-spacing: 20px;
-    line-height: 135%;
-    letter-spacing: 0.3em;
-  }
-  .text_right{
-    display:block;
-    text-align: right;
-    line-height: 100%;
-    letter-spacing: 0.3em;
-  }
-  .letter_spacing_extended{
-    letter-spacing: 60px;
-  }
-  .no_letter_spacing{
-    letter-spacing: 0px;
-  }
-  .cover_description {
-    display: flex;
-    gap: 78px;
-    align-items: center;
-    justify-content: right;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    margin-top: 140px;
-    position: relative;
-    z-index: 2;
+.overlay {
+  /* полупрозрачный слой */
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 60%;
+  position: absolute;
+  background-position: center;
+  z-index: 1;
+  inset: 0;
+}
+.cover_title {
+  position: relative;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: white;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.text_up {
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: 0px;
+}
+.text_center {
+  display: block;
+  text-align: center;
+  margin-left: -29px;
+}
+.text_right {
+  display: block;
+  text-align: end;
+}
+.letter_spacing_extended {
+  display: inline-block;
+  letter-spacing: 0.6em;
+}
+.no_letter_spacing {
+  display: inline-block;
+  letter-spacing: 0px;
+}
+
+.cover_description {
+  display: flex;
+  gap: 78px;
+  align-items: center;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  margin-top: 130px;
 }
 
 .cover_description_text {
-    word-spacing: 18px;
-    text-align: center;
-    color: #FFF;
+  word-spacing: 18px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  z-index: 2;
 }
 
 .button {
-    width: 257px;
-    height: 52px;
-    font-family: Raleway, sans-serif;
-    text-align: center;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    background-color: transparent;
-    padding: 12px 32px;
-    z-index: 1;
-    color: #FFF;
-    border: 1px solid #FFF;
+  width: 257px;
+  height: 52px;
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 12px 32px;
+  z-index: 1;
+  color: #fff;
+  border: 1px solid currentColor;
 }
+
 /*конец   блока 'ВХОДНАЯ СЕКЦИИ'
 
 Блок 'СПИСОК КАРТОЧЕК'*/
 
 .lots {
-  margin: 180px 50px 181px 50px;
+  margin: 180px 50px 180px 50px;
   max-width: 1340px;
 }
 
@@ -183,48 +168,55 @@
 }
 
 .lots_card_list {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 25px;
+  margin-bottom: 30px;
 }
 
 .lots_card_list_item {
-  font-size: 20px;
-  font-weight: 400;
-  font-style: normal;
+  min-height: 450px;
+  width: 430px;
+  flex-grow: 1;
   line-height: 120%;
-  color: #FFF;
+  color: #fff;
+  position: relative;
 }
 
 .card_link {
   display: block;
   text-decoration: none;
+  height: 100%;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
   padding: 50px 40px;
-  margin-bottom: 30px;
-  min-height: 450px;
-  width: 430px;
+  background-color: black;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 .card_title {
+  color: white;
   font-size: 22px;
   font-weight: 700;
+  line-height: 1.2;
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
   text-transform: uppercase;
-  text-decoration: underline;
   z-index: 1;
 }
 
 .card_text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
   z-index: 1;
 }
 
@@ -246,7 +238,7 @@
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid currentColor;
   margin-left: 40px;
 }
 /*Конец блока 'ЛОТЫ'
@@ -269,8 +261,7 @@
   margin-right: 95px;
   background-color: #000;
 }
-.about_logo
-.about_logo_image {
+.about_logo .about_logo_image {
   width: 148px;
   height: 114px;
   margin: 63px 46px;
@@ -306,13 +297,8 @@
   align-items: start;
   font-size: 18px;
 }
-.footer_address {
-  max-width: 240px;
-  font-style: normal;
-  line-height: 135%;
-  justify-self: right;
-}
-.footer_menu{
+
+.footer_menu {
   list-style-type: none;
   text-decoration: none;
   background-color: rgb(255, 255, 255);
@@ -327,19 +313,19 @@
 
 .footer_link,
 .footer_menu_link {
-    text-decoration: none;
-    border-bottom: 1px solid #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
 }
 
 .footer_social_list {
   display: flex;
-  width: 240px;
-  height: 48px;
   gap: 50px;
   list-style-type: none;
 }
+
 .footer_social_list_item {
   list-style-type: none;
   text-decoration: none;
 }
+
 /* Конец 'Подвала'*/
